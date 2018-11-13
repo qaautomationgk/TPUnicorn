@@ -1,0 +1,11 @@
+[0.000][INFO]:      ChromeDriver 21.0.1180.4 D:\Kalyan Gumpa\MondeeInc\chromedriver.exe
+[0.724][FINE]:      Initializing session with capabilities {
+   "browserName": "chrome",
+   "goog:chromeOptions": {
+      "args": [  ],
+      "extensions": [  ]
+   }
+}
+
+[0.725][INFO]:      Launching chrome: "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --disable-hang-monitor --disable-prompt-on-repost --dom-automation --full-memory-crash-report --no-default-browser-check --no-first-run --ignore-certificate-errors --disable-popup-blocking --homepage=about:blank
+[45.733][SEVERE]:   Failed to initialize connection

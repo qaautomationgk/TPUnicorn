@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry including="**/*.java" kind="src" output="target/classes" path="src">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/Kalyan Gumpa/Atom Jars/atom_dbutil-2.6.jar"/>
+	<classpathentry kind="lib" path="D:/Kalyan Gumpa/Atom Jars/testng-6.0.jar"/>
+	<classpathentry kind="lib" path="D:/Kalyan Gumpa/Atom Jars/selenium-support-2.29.1.jar"/>
+	<classpathentry kind="lib" path="D:/Kalyan Gumpa/Atom Jars/selenium-safari-driver-2.29.1.jar"/>
+	<classpathentry kind="lib" path="D:/Kalyan Gumpa/Atom Jars/ojdbc6-11.2.0.3.jar"/>
+	<classpathentry kind="lib" path="D:/Kalyan Gumpa/Atom Jars/tmcdev/atom_mailutil/2.5/atom_mailutil-2.5.jar"/>
+	<classpathentry kind="lib" path="D:/Kalyan Gumpa/Atom Jars/tmcdev/atom_parallelexecution/2.5/atom_parallelexecution-2.5.jar"/>
+	<classpathentry kind="lib" path="D:/Kalyan Gumpa/Atom Jars/tmcdev/atom_rallyintegration/2.5/atom_rallyintegration-2.5.jar"/>
+	<classpathentry kind="lib" path="D:/Kalyan Gumpa/Atom Jars/tmcdev/atom_report/2.5/atom_report-2.5.jar"/>
+	<classpathentry kind="lib" path="D:/Kalyan Gumpa/Atom Jars/tmcdev/atom_utillibraries/2.5/atom_utillibraries-2.5.jar"/>
+	<classpathentry kind="lib" path="D:/Kalyan Gumpa/Atom Jars/java-json.jar"/>
+	<classpathentry kind="lib" path="D:/Kalyan Gumpa/Atom Jars/selenium-server-standalone-3.7.1.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="target/classes"/>
+</classpath>

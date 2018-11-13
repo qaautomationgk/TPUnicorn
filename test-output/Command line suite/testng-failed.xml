@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Command line suite]">
+  <test name="Command line test(failed)">
+    <classes>
+      <class name="com.cisco.testscripts.RMASimplification.RMAS_1018239_Standard_Return_Ship">
+        <methods>
+          <include name="rmas_1018239_Standard_Return_Ship" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.cisco.testscripts.RMASimplification.RMAS_1018239_Standard_Return_Ship -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [Command line suite] -->

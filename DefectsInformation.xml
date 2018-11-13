@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<Defects>
+	<defect id="12345">
+		<severity>S1 - Critical - No workaround</severity>
+		<priority>High Attention</priority>
+		<c_CiscoProjectName>N/A</c_CiscoProjectName>
+		<c_ERMORelease>N/A</c_ERMORelease>
+		<c_TestCycle>N/A</c_TestCycle>
+		<c_XFlow>N/A</c_XFlow>
+		<state>Submitted</state>
+	</defect>
+</Defects>

@@ -1,0 +1,334 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>ATOM_Selenium_Apr-Release</groupId>
+	<artifactId>ATOM_Selenium_Apr-Release</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<build>
+		<sourceDirectory>src</sourceDirectory>
+		<resources>
+			<resource>
+				<directory>src</directory>
+				<includes>
+					<include>**/*.java</include>
+				</includes>
+			</resource>
+			<resource>
+				<directory>src</directory>
+				<includes>
+					<include>**/*.properties</include>
+				</includes>
+			</resource>
+		</resources>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.14.1</version>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.6</source>
+					<target>1.6</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>sonar-maven-plugin</artifactId>
+				<version>2.3</version>
+			</plugin>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>exec-maven-plugin</artifactId>
+				<version>1.2.1</version>
+				<configuration>
+					<mainClass>lib.cisco.util.Runner</mainClass>
+					<arguments>
+						<argument>${testing.type}</argument>
+						<argument>${release.id}</argument>
+						<argument>${app.id}</argument>
+						<argument>${cycle}</argument>
+						<argument>${test.case.Ids}</argument>
+						<argument>${build.id}</argument>
+						<argument>${build.no}</argument>
+						<argument>${build.url}</argument>
+						<argument>${pbuild.id}</argument>
+						<argument>${pbuild.no}</argument>
+						<argument>${pbuild.url}</argument>
+						<argument>${project.artifactId}</argument>
+						<argument>${project.groupId}</argument>
+						<argument>${sonar.host.url}</argument>
+					</arguments>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>sonar-maven-plugin</artifactId>
+				<version>2.3</version>
+			</plugin>
+
+		</plugins>
+	</build>
+
+	<properties>
+		<netbeans.hint.deploy.server>gfv3ee6</netbeans.hint.deploy.server>
+		<sonar.host.url>http://localhost:9000/</sonar.host.url>
+
+		<testing.type />
+		<release.id />
+		<app.id />
+		<cycle />
+		<test.case.Ids />
+		<build.no />
+		<build.id />
+		<build.url />
+		<pbuild.no />
+		<pbuild.id />
+		<pbuild.url />
+		<pbuild.check />
+
+	</properties>
+
+	<dependencies>
+
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+			<version>3.5.3</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-server</artifactId>
+			<version>3.5.3</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>6.8.8</version>
+		</dependency>
+
+		<dependency>
+			<groupId>surefire</groupId>
+			<artifactId>surefire</artifactId>
+			<version>1.4</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.maven.surefire</groupId>
+			<artifactId>surefire-api</artifactId>
+			<version>2.17</version>
+		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/javax.mail/javax.mail-api -->
+		<dependency>
+			<groupId>javax.mail</groupId>
+			<artifactId>javax.mail-api</artifactId>
+			<version>1.5.5</version>
+		</dependency>
+
+
+		<dependency>
+			<groupId>org.apache.maven.surefire</groupId>
+			<artifactId>surefire-testng</artifactId>
+			<version>2.17</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.sonatype.http-testing-harness</groupId>
+			<artifactId>testng-runner</artifactId>
+			<version>0.8</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpclient</artifactId>
+			<version>4.3.5</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.maven.surefire</groupId>
+			<artifactId>surefire-junit</artifactId>
+			<version>2.6</version>
+		</dependency>
+
+		<!--dependency> <groupId>cn.guoyukun.jdbc</groupId> <artifactId>oracle-ojdbc6</artifactId> 
+			<version>11.2.0.3.0</version> </dependency -->
+
+		<dependency>
+			<groupId>com.google.guava</groupId>
+			<artifactId>guava</artifactId>
+			<version>21.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>javax.mail</groupId>
+			<artifactId>mail</artifactId>
+			<version>1.4</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.google.api-client</groupId>
+			<artifactId>google-api-client</artifactId>
+			<version>1.22.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>javax.activation</groupId>
+			<artifactId>activation</artifactId>
+			<version>1.1.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.17</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.codehaus.sonar</groupId>
+			<artifactId>sonar-maven-plugin</artifactId>
+			<version>4.4.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml</artifactId>
+			<version>3.9</version>
+			<exclusions>
+				<exclusion>
+					<artifactId>xml-apis</artifactId>
+					<groupId>xml-apis</groupId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.pdfbox</groupId>
+			<artifactId>pdfbox</artifactId>
+			<version>1.7.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>xml-apis</groupId>
+			<artifactId>xml-apis</artifactId>
+			<version>1.4.01</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.rallydev.rest</groupId>
+			<artifactId>rally-rest-api</artifactId>
+			<version>2.1.1</version>
+		</dependency>
+
+		<!--dependency> <groupId>it.cvc.employeeservices.tmc.tmcdev.tmcdev</groupId> 
+			<artifactId>atom_report</artifactId> <version>2.5</version> </dependency> 
+			<dependency> <groupId>it.cvc.employeeservices.tmc.tmcdev.tmcdev</groupId> 
+			<artifactId>atom_mailutil</artifactId> <version>2.5</version> </dependency> 
+			<dependency> <groupId>it.cvc.employeeservices.tmc.tmcdev.tmcdev</groupId> 
+			<artifactId>atom_dbutil</artifactId> <version>2.5</version> </dependency> 
+			<dependency> <groupId>it.cvc.employeeservices.tmc.tmcdev.tmcdev</groupId> 
+			<artifactId>atom_parallelexecution</artifactId> <version>2.5</version> </dependency> 
+			<dependency> <groupId>it.cvc.employeeservices.tmc.tmcdev.tmcdev</groupId> 
+			<artifactId>atom_pdfvalidation</artifactId> <version>2.5</version> </dependency> 
+			<dependency> <groupId>it.cvc.employeeservices.tmc.tmcdev.tmcdev</groupId> 
+			<artifactId>atom_rallyintegration</artifactId> <version>2.5</version> </dependency> 
+			<dependency> <groupId>it.cvc.employeeservices.tmc.tmcdev.tmcdev</groupId> 
+			<artifactId>atom_utillibraries</artifactId> <version>2.5</version> </dependency> 
+			<dependency> <groupId>it.cvc.employeeservices.tmc.tmcdev.tmcdev</groupId> 
+			<artifactId>atom_webserviceutil</artifactId> <version>2.5</version> </dependency> 
+			<dependency> <groupId>it.cvc.employeeservices.tmc.tmcdev.tmcdev</groupId> 
+			<artifactId>atom_wordfilevalidation</artifactId> <version>2.5</version> </dependency -->
+
+		<dependency>
+			<groupId>com.pojosontheweb</groupId>
+			<artifactId>monte-repack</artifactId>
+			<version>1.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.sikuli</groupId>
+			<artifactId>sikuli-api</artifactId>
+			<version>1.2.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.ccil.cowan.tagsoup</groupId>
+			<artifactId>tagsoup</artifactId>
+			<version>1.2.1</version>
+		</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.10</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+			<version>3.4</version>
+		</dependency>
+		<dependency>
+			<groupId>com.google.code.gson</groupId>
+			<artifactId>gson</artifactId>
+			<version>2.3.1</version>
+			<optional>true</optional>
+		</dependency>
+		<dependency>
+			<groupId>com.googlecode.json-simple</groupId>
+			<artifactId>json-simple</artifactId>
+			<version>1.1.1</version>
+			<optional>true</optional>
+		</dependency>
+		<dependency>
+			<groupId>org.hamcrest</groupId>
+			<artifactId>hamcrest-core</artifactId>
+			<version>1.3</version>
+		</dependency>
+		<dependency>
+			<groupId>org.hamcrest</groupId>
+			<artifactId>hamcrest-library</artifactId>
+			<version>1.3</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>2.4</version>
+		</dependency>
+		<dependency>
+			<groupId>com.jayway.restassured</groupId>
+			<artifactId>rest-assured</artifactId>
+			<version>2.5.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.jayway.jsonpath</groupId>
+			<artifactId>json-path</artifactId>
+			<version>2.0.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.jayway.restassured</groupId>
+			<artifactId>xml-path</artifactId>
+			<version>2.4.1</version>
+		</dependency>
+		<dependency>
+			<groupId>com.jayway.restassured</groupId>
+			<artifactId>spring-mock-mvc</artifactId>
+			<version>2.4.1</version>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+
+	<repositories>
+
+		<repository>
+			<id>Stage-Artifactory</id>
+			<url>http://repo-art.cisco.com/artifactory/cisco-shared-libs-local</url>
+		</repository>
+
+	</repositories>
+</project>
